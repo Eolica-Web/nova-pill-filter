@@ -1,0 +1,46 @@
+{
+    "name": "eolica/nova-pill-filter",
+    "description": "A simple Laravel Nova filter that renders into clickable pills",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "homepage": "https://github.com/Eolica-Web/nova-pill-filter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Llobell",
+            "email": "dllobellmoya@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "laravel/nova": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eolica\\NovaPillFilter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eolica\\NovaPillFilter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eolica\\NovaPillFilter\\FilterServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
